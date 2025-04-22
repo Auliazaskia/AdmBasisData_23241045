@@ -6,15 +6,15 @@ USE tiket_konser_online;
 
 -- membuat tabel dalam database 'tiket_konser_online'
 CREATE TABLE customer (
-	customer_id varchar(25),
+    customer_id varchar(25),
     nama_lengkap varchar(50),
     email varchar(75),
     no_telepon varchar(15));
     DESCRIBE customer;
     
 CREATE TABLE tiket (
-	id_tiket varchar(10),
-	nama_kategori varchar(10),
+    id_tiket varchar(10),
+    nama_kategori varchar(10),
     harga int);
     
 CREATE TABLE transaksi_jualbeli (
@@ -84,7 +84,7 @@ SELECT * FROM tiket;
 -- membuat data customer
 INSERT INTO customer(customer_id, nama_lengkap, email, no_telepon)
 VALUES	('01', 'Jaya', 'jaya@gmail.com','08180578111'),
-		('02', 'Jono', 'jono@gmail.com','08180578178'),
+	('02', 'Jono', 'jono@gmail.com','08180578178'),
         ('03', 'Aji', 'aji@gmail.com','08417768866'),
         ('04', 'Ujang', 'ujang@gmail.com','08177482868'),
         ('05', 'Jana', 'jana@gmail.com','0892378678');
@@ -93,7 +93,7 @@ VALUES	('01', 'Jaya', 'jaya@gmail.com','08180578111'),
 -- membuat data customer
 INSERT INTO transaksi_jualbeli (id_transaksi, id_tiket, customer_id, nama_kategori, qty, tgl_beli, metode_pembelian, total_harga)
 VALUES	('transaksi21', 'tiketket11', 'custom910','VIP', '1', '2023-04-10', 'M-BANKING', '3500000'),
-		('transaks31', 'tiketin90', 'custe810','REGULER','2', '2023-04-11', 'E-WALLET', '1500000'),
+	('transaks31', 'tiketin90', 'custe810','REGULER','2', '2023-04-11', 'E-WALLET', '1500000'),
         ('transak41', 'tikin80', 'tomer710','VIP','3', '2023-04-13', 'DANA', '3500000'),
         ('trans51', 'teken70', 'custor610','PLATINUM','4', '2023-04-14', 'BRIMO', '2750000'),
         ('tra61', 'takan60', 'stome510','PLATINUM','5', '2023-04-15', 'DANA', '2750000');
