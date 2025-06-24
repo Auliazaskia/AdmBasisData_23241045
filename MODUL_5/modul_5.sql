@@ -1,4 +1,5 @@
--- Nama   : Erna wati
+-- Nama   : Aulia Zaskia
+-- NIM    : 23241045
 -- Modul  : 5
 -- Kelas  : PTI/B
 
