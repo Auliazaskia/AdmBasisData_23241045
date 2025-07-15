@@ -27,13 +27,13 @@ FROM tr_penjualan GROUP BY  kode_pelanggan, kode_produk, qty, harga
 HAVING (qty * harga) >= 200000
 ORDER BY total ASC;
 
--- soal 2 (tidak selesai/tidak sempat di ACC pada saat (UAS))
+-- soal 2 (tidak selesai saaT (UAS))
 -- tampilkan nama pelanggan dan nilai transaksinya dengan nilai transaksi terbesar
 SELECT ms.nama_pelanggan, MAX(tr.qty * tr.harga) AS nilai_transaksi 
  FROM tr_penjualan AS tr JOIN ms_pelanggan AS ms ON TRUE;
 
 
--- saol 3 (tidak selesai/tidak sempat di ACC pada saat (UAS))
+-- saol 3 (tidak selesai saat (UAS))
 -- tampilan nama_produk, kategori, dan harga dari produk yang tidak pernah terjual
 SELECT p.nama_produk, p.kategori_produk, p.harga
 FROM ms_produk p
